@@ -76,6 +76,31 @@ header div nav .button {
     transition: 0.5s;
 }
 
+.b-1 {
+    animation: fade-in;
+    animation-duration: 0.5s;
+}
+
+.b-2 {
+    animation: fade-in;
+    animation-duration: 1s;
+}
+
+.b-3 {
+    animation: fade-in;
+    animation-duration: 1.5s;
+}
+
+.b-4 {
+    animation: fade-in;
+    animation-duration: 2s;
+}
+
+.b-5 {
+    animation: fade-in;
+    animation-duration: 2.5s;
+}
+/* ----- Hovers y Animations -------- */
 a:hover {
     color: #e9a830;
 }
@@ -89,6 +114,15 @@ header div nav .button:hover {
 
 header div nav .button a:hover {
     color: rgb(202, 187, 156)
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* ----- main ----- */
