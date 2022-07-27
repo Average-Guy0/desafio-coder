@@ -257,6 +257,9 @@ tr:hover {
 .emilia {
     max-height: 400px;
 }
+.cambrigeside {
+    max-width: 400px;
+}
 
 .warning {
     color: red;
