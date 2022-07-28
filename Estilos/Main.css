@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 body {
@@ -14,10 +15,19 @@ body {
     font-weight: 300;
     font-size: 20px;
     width: 100%;
+    margin: 0;
 }
 
-/*  color palette
---{rich-black-fogra-29: #070B12ff};
+h2 {
+    margin: 0px;
+    font-weight: 800;
+    line-height: 2;
+}
+p {
+    margin: 0;
+}
+ /* color palette
+--{rich-black-fogra-29: #070B12ff;
 --dark-purple: #241525ff;
 --xiketic: #200913ff;
 --gainsboro: #DDDADBff;
@@ -26,8 +36,8 @@ body {
 --black: #010000ff;
 --vivid-burgundy: #961A35ff;
 --silver-pink: #CAAA9Cff;
---old-mauve: #4F1C30ff;
-*/
+--old-mauve: #4F1C30ff;} */
+
 
 
 /* ----- Header ----- */
@@ -284,7 +294,15 @@ footer {
     text-align: center;
 }
 
+/* -------- Changes to Boostrap ------- */
 
+.row {
+    padding: 20px 0px;
+}
+
+.card {
+    background-color: #961A35ff;
+}
 /* --------- MEDIA QUERY ---------- */
 
 @media screen and (max-width:1220px) {
