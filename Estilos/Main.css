@@ -303,6 +303,10 @@ footer {
 .card {
     background-color: #961A35ff;
 }
+
+.btn {
+    margin: 20px 0px;
+}
 /* --------- MEDIA QUERY ---------- */
 
 @media screen and (max-width:1220px) {

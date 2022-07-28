@@ -13,8 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Splash&display=swap"
         rel="stylesheet">
 
-    <!-- link al archivo Css -->
-    <link rel="stylesheet" href="../Estilos/Main.css">
+<!-- CSS only boostrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- link al archivo Css -->
+<link rel="stylesheet" href="../Estilos/Main.css">
+
 
 
     <title>El Gran Sueño</title>
@@ -176,10 +181,28 @@
             <div>
                 <p><span class="trade-name">Piercing the mist:</span> es una obra de ficcion. toda semejanza con la
                     realidad es pura coincidencia</p>
-                <p>Todos los derechos reservados a Son of Oak Game Studio</p>
+                <p>Todos los derechos reservados a <button class="btn btn-primary btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Son of Oak Game Studio</button></p>
+            </div>
+            
+
+            <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">City of Mist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <p>Todo lo que aparece en Piercing the Mist es parte del universo de City of Mist que pertenece a Son of Oak Game Studio.</p> <p> Todo lo presenetado aqui es en referencia a una instancia de juego personal.</p>
+                    <p>Para conocer mas sobre este mundo, porfavor visita la pagina principal de <a href="https://cityofmist.co/">City of Mist</a></p>
+                </div>
             </div>
         </footer>
     </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
