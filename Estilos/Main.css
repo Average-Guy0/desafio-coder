@@ -218,6 +218,26 @@ section {
     margin: 5px;
 }
 
+strong {
+    text-decoration: underline;
+    font-weight: 900;
+}
+main section div ul{
+    list-style: square;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center table {
+    max-width: 1000px;
+}
+
+.fabby {
+    max-height: 700px;
+}
 /* [[[[GRID]]]] gatekeepers y el gran sueño */
 
 /* .text-with-img {
