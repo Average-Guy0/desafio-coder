@@ -1,3 +1,5 @@
+@import "color";
+
 @import "class";
 
 @import "grid";
@@ -19,7 +21,7 @@
   
   body {
     font-family: 'Playfair Display';
-    color: #DDDADBff;
+    color: $color-white;
     font-weight: 300;
     font-size: 20px;
     width: 100%;
@@ -35,18 +37,6 @@
   p {
     margin: 0;
   }
-  
-   /* color palette
-  --{rich-black-fogra-29: #070B12ff;
-  --dark-purple: #241525ff;
-  --xiketic: #200913ff;
-  --gainsboro: #DDDADBff;
-  --slate-gray: #758193ff;
-  --smoky-black: #100F10ff;
-  --black: #010000ff;
-  --vivid-burgundy: #961A35ff;
-  --silver-pink: #CAAA9Cff;
-  --old-mauve: #4F1C30ff;} */
   
   /* ----- Header ----- */
   
@@ -69,7 +59,7 @@
   
         li a {
           text-decoration: none;
-          color: #758193ff;
+          color: $color-silver-grey;
           margin: 10px;
         }
       }
@@ -83,19 +73,19 @@
   /* ----- Hovers y Animations -------- */
   
   a:hover {
-    color: #e9a830;
+    color: $color-Yellow;
   }
   
   header div nav .button {
     &:hover {
       height: 100px;
       font-size: 23px;
-      border: solid #4F1C30ff;
-      background-color: #241525ff;
+      border: solid $color-dark-purple;
+      background-color: $color-darker-purple;
     }
   
     a:hover {
-      color: rgb(202, 187, 156);
+      color: $color-pinkish;
     }
   }
   
@@ -113,12 +103,12 @@
   
     
   main {
-    background-color: #070B12ff;
+    background-color: $color-black-smoke;
   
     h3 {
       text-align: center;
       background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
-      border-bottom: solid #4F1C30ff;
+      border-bottom: solid $color-dark-purple;
       padding: 5px;
     }
   }
@@ -126,13 +116,13 @@
   h4 {
     text-align: center;
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
-    border-bottom: solid #4F1C30ff;
+    border-bottom: solid $color-dark-purple;
     padding: 5px;
   }
   
   main a {
     text-decoration: none;
-    color: #CAAA9Cff;
+    color: $color-pinkish;
   }
   
     
@@ -156,7 +146,7 @@
   
   
   tr:hover {
-    background-color: #100F10ff;
+    background-color: $color-darker-purple;
   }
   
   
@@ -167,9 +157,6 @@
   /* ----- footer ----- */
   
   footer {
-    background-color: #010000ff;
+    background-color: $color-black-smoke;
     text-align: center;
   }
-
-  
-  
