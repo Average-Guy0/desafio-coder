@@ -1,0 +1,55 @@
+/* ----- Header ----- */
+  
+  
+  
+header div {
+    h1 {
+      align-items: center;
+      display: flex;
+      font-family: 'Splash';
+      text-transform: uppercase;
+      padding: 0px 10px 0 10px;
+    }
+  
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+  
+        li a {
+          text-decoration: none;
+          color: $color-silver-grey;
+          margin: 10px;
+        }
+      }
+  
+      
+    }
+  }
+
+  /* ----- Hovers y Animations -------- */
+
+  header div nav .button {
+    &:hover {
+      height: 100px;
+      font-size: 23px;
+      border: solid $color-dark-purple;
+      background-color: $color-darker-purple;
+    }
+  
+    a:hover {
+      color: $color-pinkish;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      transform: translateY(-100px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  

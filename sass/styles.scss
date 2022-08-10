@@ -1,5 +1,13 @@
 @import "color";
 
+@import "body";
+
+@import "header-nav";
+
+@import "main";
+
+@import "footer";
+
 @import "class";
 
 @import "grid";
@@ -7,156 +15,3 @@
 @import "boost-changes";
 
 @import "mediaq";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    margin: 0;
-  }
-  
-  body {
-    font-family: 'Playfair Display';
-    color: $color-white;
-    font-weight: 300;
-    font-size: 20px;
-    width: 100%;
-    margin: 0;
-  }
-  
-  h2 {
-    margin: 0px;
-    font-weight: 800;
-    line-height: 2;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  /* ----- Header ----- */
-  
-  
-  
-  header div {
-    h1 {
-      align-items: center;
-      display: flex;
-      font-family: 'Splash';
-      text-transform: uppercase;
-      padding: 0px 10px 0 10px;
-    }
-  
-    nav {
-      ul {
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-  
-        li a {
-          text-decoration: none;
-          color: $color-silver-grey;
-          margin: 10px;
-        }
-      }
-  
-      
-    }
-  }
-
-  
-
-  /* ----- Hovers y Animations -------- */
-  
-  a:hover {
-    color: $color-Yellow;
-  }
-  
-  header div nav .button {
-    &:hover {
-      height: 100px;
-      font-size: 23px;
-      border: solid $color-dark-purple;
-      background-color: $color-darker-purple;
-    }
-  
-    a:hover {
-      color: $color-pinkish;
-    }
-  }
-  
-  @keyframes fade-in {
-    0% {
-      transform: translateY(-100px);
-    }
-  
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  
-  /* ----- main ----- */
-  
-    
-  main {
-    background-color: $color-black-smoke;
-  
-    h3 {
-      text-align: center;
-      background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
-      border-bottom: solid $color-dark-purple;
-      padding: 5px;
-    }
-  }
-  
-  h4 {
-    text-align: center;
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
-    border-bottom: solid $color-dark-purple;
-    padding: 5px;
-  }
-  
-  main a {
-    text-decoration: none;
-    color: $color-pinkish;
-  }
-  
-    
-  strong {
-    text-decoration: underline;
-    font-weight: 900;
-  }
-  
-  main section div ul {
-    list-style: square;
-  }
-  
-  
-    
-  table, th, td {
-    border: solid 1px;
-    border-collapse: collapse;
-    text-align: center;
-  }
-  
-  
-  
-  tr:hover {
-    background-color: $color-darker-purple;
-  }
-  
-  
-  form {
-    border: solid;
-  }
-  
-  /* ----- footer ----- */
-  
-  footer {
-    background-color: $color-black-smoke;
-    text-align: center;
-  }

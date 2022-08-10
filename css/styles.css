@@ -1,3 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  font-family: "Playfair Display";
+  color: #dddadb;
+  font-weight: 300;
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+/* ----- Hovers y Animations -------- */
+a:hover {
+  color: #e9a830;
+}
+
+/* ----- Header ----- */
+header div h1 {
+  align-items: center;
+  display: flex;
+  font-family: "Splash";
+  text-transform: uppercase;
+  padding: 0px 10px 0 10px;
+}
+header div nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+header div nav ul li a {
+  text-decoration: none;
+  color: #758193;
+  margin: 10px;
+}
+
+/* ----- Hovers y Animations -------- */
+header div nav .button:hover {
+  height: 100px;
+  font-size: 23px;
+  border: solid #4f1c30;
+  background-color: #241525;
+}
+header div nav .button a:hover {
+  color: #d28989;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* ----- main ----- */
+main {
+  background-color: #0e0712;
+}
+main h3 {
+  text-align: center;
+  background: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 212, 255, 0) 100%);
+  border-bottom: solid #4f1c30;
+  padding: 5px;
+}
+
+h2 {
+  margin: 0px;
+  font-weight: 800;
+  line-height: 2;
+}
+
+p {
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  background: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 212, 255, 0) 100%);
+  border-bottom: solid #4f1c30;
+  padding: 5px;
+}
+
+main a {
+  text-decoration: none;
+  color: #d28989;
+}
+
+strong {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+main section div ul {
+  list-style: square;
+}
+
+table, th, td {
+  border: solid 1px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #241525;
+}
+
+form {
+  border: solid;
+}
+
+/* ----- footer ----- */
+footer {
+  background-color: #0e0712;
+  text-align: center;
+}
+
 .top {
   display: flex;
   justify-content: space-between;
@@ -214,12 +348,6 @@ section .groups p {
   section {
     display: flex;
     flex-direction: column;
-    /* grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "us"
-        "city"
-        "groups"; */
   }
   .text-with-img {
     padding: 0;
@@ -234,136 +362,4 @@ section .groups p {
   .title {
     font-size: 20px;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  margin: 0;
-}
-
-body {
-  font-family: "Playfair Display";
-  color: #dddadb;
-  font-weight: 300;
-  font-size: 20px;
-  width: 100%;
-  margin: 0;
-}
-
-h2 {
-  margin: 0px;
-  font-weight: 800;
-  line-height: 2;
-}
-
-p {
-  margin: 0;
-}
-
-/* ----- Header ----- */
-header div h1 {
-  align-items: center;
-  display: flex;
-  font-family: "Splash";
-  text-transform: uppercase;
-  padding: 0px 10px 0 10px;
-}
-header div nav ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-}
-header div nav ul li a {
-  text-decoration: none;
-  color: #758193;
-  margin: 10px;
-}
-
-/* ----- Hovers y Animations -------- */
-a:hover {
-  color: #e9a830;
-}
-
-header div nav .button:hover {
-  height: 100px;
-  font-size: 23px;
-  border: solid #4f1c30;
-  background-color: #241525;
-}
-header div nav .button a:hover {
-  color: #d28989;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-/* ----- main ----- */
-main {
-  background-color: #0e0712;
-}
-main h3 {
-  text-align: center;
-  background: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 212, 255, 0) 100%);
-  border-bottom: solid #4f1c30;
-  padding: 5px;
-}
-
-h4 {
-  text-align: center;
-  background: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 212, 255, 0) 100%);
-  border-bottom: solid #4f1c30;
-  padding: 5px;
-}
-
-main a {
-  text-decoration: none;
-  color: #d28989;
-}
-
-strong {
-  text-decoration: underline;
-  font-weight: 900;
-}
-
-main section div ul {
-  list-style: square;
-}
-
-table, th, td {
-  border: solid 1px;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-tr:hover {
-  background-color: #241525;
-}
-
-form {
-  border: solid;
-}
-
-/* ----- footer ----- */
-footer {
-  background-color: #0e0712;
-  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

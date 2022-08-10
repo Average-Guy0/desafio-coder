@@ -1,0 +1,65 @@
+/* ----- main ----- */
+  
+    
+main {
+    background-color: $color-black-smoke;
+  
+    h3 {
+      text-align: center;
+      background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
+      border-bottom: solid $color-dark-purple;
+      padding: 5px;
+    }
+  }
+
+  h2 {
+    margin: 0px;
+    font-weight: 800;
+    line-height: 2;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  h4 {
+    text-align: center;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
+    border-bottom: solid $color-dark-purple;
+    padding: 5px;
+  }
+  
+  main a {
+    text-decoration: none;
+    color: $color-pinkish;
+  }
+  
+    
+  strong {
+    text-decoration: underline;
+    font-weight: 900;
+  }
+  
+  main section div ul {
+    list-style: square;
+  }
+  
+  
+    
+  table, th, td {
+    border: solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  
+  
+  tr:hover {
+    background-color: $color-darker-purple;
+  }
+  
+  
+  form {
+    border: solid;
+  }
+  
