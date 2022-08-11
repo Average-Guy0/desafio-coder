@@ -5,44 +5,48 @@
     justify-content: space-between;
     background-color: $color-black-smoke;
     color: $color-silver-grey;
-    width: 100%;
+    @include space (100%, 0px 10px);
     height: 100px;
     position: fixed;
   }
 
   .button {
-    border: solid 2px;
-    height: 75px;
-    font-size: 20px;
     display: flex;
     justify-content: center;
+    border: solid 2px;
+    height: 75px;
+    font-size: 20px;    
     transition: 0.5s;
   }
 
 
 //   nav
-  .b-1 {
+
+  .b {
     animation: fade-in;
+  }
+  .b-1 {
+    @extend .b;
     animation-duration: 0.5s;
   }
   
   .b-2 {
-    animation: fade-in;
+    @extend .b;
     animation-duration: 1s;
   }
   
   .b-3 {
-    animation: fade-in;
+    @extend .b;
     animation-duration: 1.5s;
   }
   
   .b-4 {
-    animation: fade-in;
+    @extend .b;
     animation-duration: 2s;
   }
   
   .b-5 {
-    animation: fade-in;
+    @extend .b;
     animation-duration: 2.5s;
   }
   
@@ -70,7 +74,7 @@
   }
 
   .more-space div {
-    padding: 20px;
+    @include space (auto, 20px 10px);
   }
 
   .div-with-scroll {
@@ -93,20 +97,20 @@
   
   .observacion {
     text-align: start;
-    padding: 8px;
+    // padding: 8px;
+    // width: 100%;
+    @include space (auto, 8px)
   }
 
-  
-  .warning {
-    color: $color-vibrant-red;
-    font-size: 25px;
-    text-decoration: underline;
-    font-weight: 100;
-  }
-  
   .remark {
     font-weight: 800;
     text-decoration: underline;
+  }
+
+  .warning {
+    color: $color-vibrant-red;
+    font-size: 25px;
+    @extend .remark;
   }
   
 

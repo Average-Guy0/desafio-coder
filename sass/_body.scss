@@ -6,7 +6,6 @@
   
   html {
     scroll-behavior: smooth;
-    margin: 0;
   }
   
   body {
@@ -14,8 +13,7 @@
     color: $color-white;
     font-weight: 300;
     font-size: 20px;
-    width: 100%;
-    margin: 0;
+    @include space (100%, 0);
   }
 
     /* ----- Hovers y Animations -------- */

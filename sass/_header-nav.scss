@@ -8,7 +8,8 @@ header div {
       display: flex;
       font-family: 'Splash';
       text-transform: uppercase;
-      padding: 0px 10px 0 10px;
+      // padding: 0px 10px;
+      @include space (fit-content, 0 10px)
     }
   
     nav {
