@@ -23,8 +23,8 @@ $fonts: (
     bold: 800,
 );
 
-@each $fuente, $peso in $fonts {
-    .#{$fuente} {
-        font-weight: $peso;
-    }
-}
+// @each $fuente, $peso in $fonts {
+//     .#{$fuente} {
+//         font-weight: $peso;
+//     }
+// }

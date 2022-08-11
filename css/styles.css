@@ -1,15 +1,3 @@
-.thin {
-  font-weight: 200;
-}
-
-.regular {
-  font-weight: 400;
-}
-
-.bold {
-  font-weight: 800;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +74,7 @@ header div nav .button a:hover {
 }
 /* ----- main ----- */
 main {
-  background-color: #0e0712;
+  background-color: #241525;
 }
 main h3 {
   text-align: center;
@@ -133,7 +121,7 @@ table, th, td {
 }
 
 tr:hover {
-  background-color: #241525;
+  background-color: #0e0712;
 }
 
 form {
@@ -222,6 +210,32 @@ footer {
   padding: 20px 10px;
 }
 
+.thin, .thin-font {
+  font-weight: 200;
+}
+
+.regular, .regular-font {
+  font-weight: 400;
+}
+
+.bold, .remark, .warning, .bold-font {
+  font-weight: 800;
+}
+
+.thin-font {
+  font-style: oblique;
+  font-size: 15px;
+}
+
+.regular-font {
+  font-size: 20px;
+}
+
+.bold-font, .warning {
+  font-size: 25px;
+  font-variant: small-caps;
+}
+
 .div-with-scroll {
   height: 450px;
   overflow: scroll;
@@ -244,13 +258,11 @@ footer {
 }
 
 .remark, .warning {
-  font-weight: 800;
   text-decoration: underline;
 }
 
 .warning {
   color: #9e1b38;
-  font-size: 25px;
 }
 
 .text-with-img {

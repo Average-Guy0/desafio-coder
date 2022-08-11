@@ -22,6 +22,7 @@
 
 //   nav
 
+  //esta clase .b fue creada para demostrar que se utilizar el extend 
   .b {
     animation: fade-in;
   }
@@ -77,6 +78,30 @@
     @include space (auto, 20px 10px);
   }
 
+  // Each usando el mapa $fonts que esta en "_color-and-powers"
+  @each $fuente, $peso in $fonts {
+      .#{$fuente} {
+          font-weight: $peso;
+      }
+  }
+
+  .thin-font {
+    @extend .thin;
+    font-style: oblique;
+    font-size: 15px;
+  }
+  // esta clase creo que puede llegar a ser util por eso la deje, pero por el momento no le eh encontrado uso
+  .regular-font {
+    @extend .regular;
+    font-size: 20px;
+  }
+
+  .bold-font {
+    @extend .bold;
+    font-size: 25px;
+    font-variant: small-caps;
+  }
+
   .div-with-scroll {
     height: 450px;
     overflow: scroll;
@@ -103,14 +128,14 @@
   }
 
   .remark {
-    font-weight: 800;
+    @extend .bold;
     text-decoration: underline;
   }
 
   .warning {
     color: $color-vibrant-red;
-    font-size: 25px;
     @extend .remark;
+    @extend .bold-font;
   }
   
 
