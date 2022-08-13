@@ -75,7 +75,7 @@
   }
 
   .more-space div {
-    @include space (auto, 20px 10px);
+    @include space (fit-content, 20px 10px);
   }
 
   // Each usando el mapa $fonts que esta en "_color-and-powers"
@@ -150,11 +150,7 @@
     max-height: 400px;
   }
   
-.cambrigeside {
-    max-width: 400px;
-  }
-
 .fabby {
-    max-height: 700px;
+    max-height: 600px;
   }
   
