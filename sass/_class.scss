@@ -74,9 +74,9 @@
     font-family: 'Splash';
   }
 
-  .more-space div {
-    @include space (fit-content, 20px 10px);
-  }
+  // .more-space div {
+  //   @include space (fit-content, 20px 10px);
+  // }
 
   // Each usando el mapa $fonts que esta en "_color-and-powers"
   @each $fuente, $peso in $fonts {
@@ -112,13 +112,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   
     table {
       max-width: 1000px;
     }
   }
 
-  
   
   .observacion {
     text-align: start;
@@ -144,6 +144,9 @@
 .text-with-img {
     display: flex;
     justify-content: space-between;
+    img {
+      max-width: 400px;
+    }
   }
   
 .emilia {

@@ -70,3 +70,21 @@ como keywords especificas a la pagina + las esenciales
 //Agregué esta descripcion: "Aca relatamos el los sucesos de la primera real pelea de Burnout en su busqueda de la pecadora de pereza, principalemente background info"
 
 //Cambie el titulo "Iglesia de los Buenos Sueños" por "Piercing the Mist || Iglesia de los Buenos Sueños"
+
+<!-- sigil.html -->
+
+//Agregué estas keywords: "fantasy bar, sigil, bar of door, lady of pain, blood contract"
+como keywords especificas a la pagina + las esenciales
+
+//Agregué esta descripcion: "informacion general sobre el bar de grietas llamado sigil, la dueña y empleados notables, asi tambien como los beneficios de pertencer"
+
+//Nombre el titulo: "Piercing the Mist || Sigil"
+
+<!-- news.html -->
+
+//Agregué estas keywords: "noticias, articulos nuevos"
+como keywords especificas a la pagina + las esenciales
+
+//Agregué esta descripcion: "una pagina que actualiza con la informacion mas nueva que integra el sitio"
+
+//Nombre el titulo: "Piercing the Mist || Nuevos Articulos"
