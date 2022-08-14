@@ -140,6 +140,7 @@ footer {
   text-align: center;
 }
 
+/* ----- Class ----- */
 .top {
   display: flex;
   justify-content: space-between;
@@ -211,6 +212,10 @@ footer {
   font-family: "Splash";
 }
 
+.wrapper div {
+  padding: 0 10px 20px;
+}
+
 .thin, .thin-font {
   font-weight: 200;
 }
@@ -234,7 +239,6 @@ footer {
 
 .bold-font, .warning {
   font-size: 25px;
-  font-variant: small-caps;
 }
 
 .div-with-scroll {
@@ -265,6 +269,7 @@ footer {
 
 .warning {
   color: #9e1b38;
+  font-variant: small-caps;
 }
 
 .text-with-img {

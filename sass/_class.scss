@@ -1,5 +1,6 @@
 // header
 
+/* ----- Class ----- */
 .top {
     display: flex;
     justify-content: space-between;
@@ -74,9 +75,13 @@
     font-family: 'Splash';
   }
 
-  // .more-space div {
-  //   @include space (fit-content, 20px 10px);
-  // }
+  .wrapper {
+    div {
+      padding: 0 10px 20px;
+      
+    }
+  }
+
 
   // Each usando el mapa $fonts que esta en "_color-and-powers"
   @each $fuente, $peso in $fonts {
@@ -99,7 +104,6 @@
   .bold-font {
     @extend .bold;
     font-size: 25px;
-    font-variant: small-caps;
   }
 
   .div-with-scroll {
@@ -122,8 +126,6 @@
   
   .observacion {
     text-align: start;
-    // padding: 8px;
-    // width: 100%;
     @include space (auto, 8px)
   }
 
@@ -134,6 +136,7 @@
 
   .warning {
     color: $color-vibrant-red;
+    font-variant: small-caps;
     @extend .remark;
     @extend .bold-font;
   }
@@ -144,6 +147,7 @@
 .text-with-img {
     display: flex;
     justify-content: space-between;
+    // align-items: center;
     img {
       max-width: 400px;
     }
