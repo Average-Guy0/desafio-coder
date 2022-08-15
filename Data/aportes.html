@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta description -->
-    <meta name="description" content="esta pagina contiene principalmente formularios para el aporte de info que luego de verificar sera agregada al sitio">
+    <meta name="description"
+        content="esta pagina contiene principalmente formularios para el aporte de info que luego de verificar sera agregada al sitio">
 
     <!-- Keywords -->
-    <meta name="keywords"  content="city of mist, obra de ficción, trpg, seven sins, fan page, roleplaying, mystery, modern fantasy, rumores, info para agregar, sugerencias">
+    <meta name="keywords"
+        content="city of mist, obra de ficción, trpg, seven sins, fan page, roleplaying, mystery, modern fantasy, rumores, info para agregar, sugerencias">
 
     <!-- favicon -->
-    <link rel="shorcut icon" href="imagenes/city mist.png">
+    <link rel="shorcut icon" href="../imagenes/city mist.png">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +30,7 @@
     <!-- title -->
     <title>Piercing the Mist || Rumores</title>
 </head>
+
 <body>
     <header>
 
@@ -48,8 +52,8 @@
                     <li class="button b-4">
                         <a href="../index.html#info-groups">Grupos de Interes</a>
                     </li>
-                    <li class="button b-5>
-                        <a href="#formularios">Aportes</a>
+                    <li class="button b-5">
+                        <a href="">Aportes</a>
                     </li>
                 </ul>
             </nav>
@@ -60,53 +64,63 @@
         <div class="banner">
             <h2 class="title">Aportes</h2>
         </div>
-        <div class="more-space">
 
-        
-        <div id="formularios">
-            <h3>¿Hay informacion que quieras aportar?</h3>
 
-            <p>nosotros hacemos lo posible para mantenernos al dia, para ayudar a otras grietas como vos, pero hay
-                un limite en lo que podemos hacer, asi que si hay informacion que quieras aportar a la pagina,
-                escribelo abajo y lo revisaremos lo antes posible</p>
+        <div class="wrapper container-fluid">
+            <div id="formularios" class="row">
 
-            <form action="">
-                <div>
-                    <label for="">comentar como:</label>
-                    <select name="" id="">
-                        <option value="">Anónimo</option>
-                        <option value="">Usuario</option>
-                    </select>
-                    <!-- esto se ignora en caso de selecionar anonimo -->
-                    <input type="text" placeholder="Usuario">
+                <div class="col-sm-5 pt-2">
+                    <h3>¿Hay informacion que quieras aportar?</h3>
+
+                    <p>nosotros hacemos lo posible para mantenernos al dia, para ayudar a otras grietas como vos, pero
+                        hay un limite en lo que podemos hacer, asi que si hay informacion que quieras aportar a la
+                        pagina, escribelo abajo y lo revisaremos lo antes posible</p>
                 </div>
 
-                <div>
-                    <textarea name="" id="" cols="30" rows="10"
-                        placeholder="escribe aqui lo que quieres reportar"></textarea>
+                <div class="col-sm-7 pt-4">
+                    <form class="pt-3" action="">
+                        <div class="">
+                            <label for="">comentar como:</label>
+                            <select name="" id="">
+                                <option value="">Anónimo</option>
+                                <option value="">Usuario</option>
+                            </select>
+                            <!-- esto se ignora en caso de selecionar anonimo -->
+                            <input type="text" placeholder="Usuario">
+                        </div>
+
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="escribe aqui lo que quieres investigar"></textarea>
+                        </div>
+
+                        <div>
+                            <p>¿quieres estar al dia con informacion hacerca de la ciudad y las grietas?</p>
+                            <label for="">suscribirme a Piercing the Mist Newslatter</label>
+                            <input type="checkbox">
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Tu correo electronico">
+                        </div>
+                    </form>
                 </div>
 
-                <div>
-                    <p>¿quieres estar al dia con informacion hacerca de la ciudad y las grietas?</p>
-                    <label for="">suscribirme a Piercing the Mist Newslatter</label>
-                    <input type="checkbox">
-                </div>
-
-                <div>
-                    <input type="text" placeholder="Tu correo electronico">
-                </div>
-            </form>
+            </div>
         </div>
-    </div>
+
+
 
     </main>
     <footer>
         <div>
             <p><span class="trade-name">Piercing the mist:</span> es una obra de ficcion. toda semejanza con la
                 realidad es pura coincidencia</p>
-            <p>Todos los derechos reservados a <button class="btn btn-primary btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Son of Oak Game Studio</button></p>
+            <p>Todos los derechos reservados a <button class="btn btn-primary btn-dark" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Son of
+                    Oak Game Studio</button></p>
         </div>
-        
+
 
         <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="offcanvasBottom"
             aria-labelledby="offcanvasBottomLabel">
@@ -115,8 +129,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body small">
-                <p>Todo lo que aparece en Piercing the Mist es parte del universo de City of Mist que pertenece a Son of Oak Game Studio.</p> <p> Todo lo presenetado aqui es en referencia a una instancia de juego personal.</p>
-                <p>Para conocer mas sobre este mundo, porfavor visita la pagina principal de <a href="https://cityofmist.co/" target="_blank">City of Mist</a></p>
+                <p>Todo lo que aparece en Piercing the Mist es parte del universo de City of Mist que pertenece a Son of
+                    Oak Game Studio.</p>
+                <p> Todo lo presenetado aqui es en referencia a una instancia de juego personal.</p>
+                <p>Para conocer mas sobre este mundo, porfavor visita la pagina principal de <a
+                        href="https://cityofmist.co/" target="_blank">City of Mist</a></p>
             </div>
         </div>
     </footer>
@@ -126,4 +143,5 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
