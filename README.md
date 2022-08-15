@@ -88,3 +88,12 @@ como keywords especificas a la pagina + las esenciales
 //Agregué esta descripcion: "una pagina que actualiza con la informacion mas nueva que integra el sitio"
 
 //Nombre el titulo: "Piercing the Mist || Nuevos Articulos"
+
+<!-- news.html -->
+
+//Agregué estas keywords: ", laboratorios secretos, experimentos inhumanos, alta tecnologia, farmaceutica, helix labs"
+como keywords especificas a la pagina + las esenciales
+
+//Agregué esta descripcion: "describo aca al grupo conocido como Helix labs y las acciones que llevan acabo en la ciudad"
+
+//Nombre el titulo: "Piercing the Mist || Helix Labs"
