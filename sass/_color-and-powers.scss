@@ -22,9 +22,3 @@ $fonts: (
     regular: 400,
     bold: 800,
 );
-
-// @each $fuente, $peso in $fonts {
-//     .#{$fuente} {
-//         font-weight: $peso;
-//     }
-// }
