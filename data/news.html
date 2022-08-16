@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta description -->
+    <meta name="description"
+        content="una pagina que actualiza con la informacion mas nueva que integra el sitio">
+
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="city of mist, obra de ficción, trpg, seven sins, fan page, roleplaying, mystery, modern fantasy, noticias, articulos nuevos">
+
+    <!-- favicon -->
+    <link rel="shorcut icon" href="../imagenes/city mist.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Splash&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS only boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- link al archivo Css -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- title -->
+    <title>Piercing the Mist || Nuevos Articulos</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="top">
+            <!-- Aca viene el titulo -->
+            <a href="../index.html"><h1>Piercing The Mist</h1></a>
+           
+            <!-- Barra de navegacion a la parte superior derecha con animaciones -->
+            <nav>
+                <ul>
+                    <li class="button b-1">
+                        <!-- haciendo click en este link desplazara la pagina suavemente hacia abajo -->
+                        <a href="#news">Nuevos Articulos</a>
+                    </li>
+                    <li class="button b-2">
+                        <a href="../index.html#info-groups">Grupos de Interes</a>
+                    </li>
+                    <li class="button b-3">
+                        <a href="glosario.html">Glosario</a>
+                    </li>
+                    <li class="button b-4">
+                        <a href="aportes.html">Aportes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="banner">
+            <!-- esto sirve como titulo del html -->
+            <h2 class="title"  id="news">Nuevos Articulos</h2>
+        </div>
+        <!-- traje de boostrap, un carousel para mostrar los nuevos articulos que no se encuentran facilmente en el index, principalmente burnout y el gran sueño -->
+        <div class="center">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                <!-- primer carousel representa Burnout el grupo de protagonistas -->
+                    <div class="carousel-item active">
+                        <a href="burnout.html"><img src="../imagenes/burnout.jpg" class="d-block w-100" alt="fuego, representando el origen del grupo burnout"></a>
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Burnout</h5>
+                            <p>El grupo que surgio en oposicion a las acciones de los 7 pecadores</p>
+                        </div>
+                    </div>
+                    <!-- el segundo carousel representa el gran sueño, la epidemia que arrazo la ciudad -->
+                    <div class="carousel-item">
+                        <a href="el-gran-sueno.html"><img src="../imagenes/great sleep.jpg" class="d-block w-100" alt="una señal en neon diciendo 'it was all a dream' representando el tema de los sueños en todo el caso"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>El Gran Sueño</h5>
+                            <p>Resumen de los eventos que transcurrieron durante la epidemia que arrazo la ciudad</p>
+                        </div>
+                    </div>
+                    <!-- el tercero representa la horda, lo puse aqui porque es el siguiente caso que burnout se enfrentara -->
+                    <div class="carousel-item">
+                        <a href="horda.html"><img src="../imagenes/horde.jpg" class="d-block w-100" alt="Un grupo causando saqueos y violencia representando la horda"></a>                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>La Horda</h5>
+                            <p>La informacion que se sabe del violento grupo llamado la Horda</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- legalidad con respecto a la propiedad intelectual de City of Mist -->
+        <div>
+            <p><span class="trade-name">Piercing the mist:</span> es una obra de ficcion. toda semejanza con la
+                realidad es pura coincidencia</p>
+            <p>Todos los derechos reservados a <button class="btn btn-primary btn-dark" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Son
+                    of Oak Game Studio</button></p>
+        </div>
+
+        <!-- offcanvas sacado de boostrap para revelar mas informacion hacerca de la relacion entre piercing the mist y city of mist -->
+        <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">City of Mist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <p>Todo lo que aparece en Piercing the Mist es parte del universo de City of Mist que pertenece a
+                    Son of Oak Game Studio.</p>
+                <p> Todo lo presenetado aqui es en referencia a una instancia de juego personal.</p>
+                <p>Para conocer mas sobre este mundo, porfavor visita la pagina principal de <a
+                        href="https://cityofmist.co/" target="_blank">City of Mist</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
