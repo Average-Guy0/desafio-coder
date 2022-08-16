@@ -52,4 +52,8 @@ header div {
       transform: translateY(0px);
     }
   }
+
+  tr:hover {
+    background-color: $color-black-smoke;
+  }
   

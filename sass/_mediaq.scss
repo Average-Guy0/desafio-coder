@@ -1,3 +1,5 @@
+// agrupada todas las mediaquery
+
 @media screen and (max-width: 1220px) {
     .top {
       height: 125px;
@@ -69,3 +71,10 @@
       font-size: 20px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .wrapper {
+      padding: 0;
+    }
+  }
+  
