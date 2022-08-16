@@ -23,11 +23,17 @@ a:hover {
 }
 
 /* ----- Header ----- */
-header div h1 {
+header div a {
+  text-decoration: none;
+  padding: 20px 0 0;
+}
+header div a h1 {
   align-items: center;
   display: flex;
   font-family: "Splash";
   text-transform: uppercase;
+  color: #758193;
+  transition: 0.5s;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -45,6 +51,10 @@ header div nav ul li a {
 }
 
 /* ----- Hovers y Animations -------- */
+header div a h1:hover {
+  color: #9e1b38;
+}
+
 header div nav .button:hover {
   height: 100px;
   font-size: 23px;
@@ -72,6 +82,10 @@ header div nav .button a:hover {
     transform: translateY(0px);
   }
 }
+tr:hover {
+  background-color: #0e0712;
+}
+
 /* ----- main ----- */
 main {
   background-color: #241525;
@@ -124,10 +138,6 @@ table, th, td {
   border: solid 1px;
   border-collapse: collapse;
   text-align: center;
-}
-
-tr:hover {
-  background-color: #0e0712;
 }
 
 form {
@@ -288,6 +298,7 @@ footer {
   max-height: 600px;
 }
 
+/*---- Grid  ----*/
 section {
   width: 100%;
   display: grid;
@@ -393,5 +404,10 @@ section .groups p {
   }
   .title {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
