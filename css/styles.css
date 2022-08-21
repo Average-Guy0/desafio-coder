@@ -160,6 +160,7 @@ footer {
   padding: 0px 10px;
   height: 100px;
   position: fixed;
+  z-index: 1;
 }
 
 .button {
@@ -339,6 +340,7 @@ section .groups p {
 
 .card {
   background-color: #9e1b38;
+  position: inherit;
 }
 
 .btn {
