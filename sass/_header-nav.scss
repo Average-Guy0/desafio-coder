@@ -13,8 +13,27 @@ header{
         font-family: 'Splash';
         text-transform: uppercase;
         color: $color-silver-grey;
-        transition: 0.5s;
+        transition: 0.2s;
+        position: relative;
         @include space (fit-content, 0 10px)
+      }
+
+      h1::before {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        background: $color-vibrant-red;
+        top: 75%;
+        right: 0;
+
+        width: 100%;
+        height: 100%;
+
+        transition: 0.2s;
+
+        transform: perspective(5rem) rotateX(30deg) scale(1, 0.5);
+        filter: blur(1.5rem);
+        opacity: 0;
       }
     }
     
@@ -48,7 +67,11 @@ header{
     div {
       a {
         h1:hover{
-            color: $color-vibrant-red;
+          color: $color-vibrant-red;
+          text-shadow: 0 0 0.5rem hsla(0, 0%, 100%, 0.322), 0 0 1rem $color-vibrant-red;
+        }
+        h1:hover::before {
+          opacity: 1;
         }
       }
     }

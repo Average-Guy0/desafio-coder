@@ -53,10 +53,14 @@ main {
   
   
     
-  table, th, td {
-    border: solid 1px;
-    border-collapse: collapse;
-    text-align: center;
+  table{
+    display: block;
+    overflow-x: auto;
+    th, td {
+      border: solid 1px;
+      border-collapse: collapse;
+      text-align: center;
+    }
   }
   
   form {

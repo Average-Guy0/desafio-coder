@@ -28,7 +28,7 @@
     transition: 100ms;
   }
 
-  // agregando refleccion al boton
+  // agregando refleccion al boton y al h1
 
   .button::before {
   pointer-events: none;
@@ -44,6 +44,7 @@
   filter: blur(1em);
   opacity: 0.2;
   }
+
 
 
 //   nav

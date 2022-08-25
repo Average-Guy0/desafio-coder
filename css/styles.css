@@ -33,11 +33,26 @@ header div a h1 {
   font-family: "Splash";
   text-transform: uppercase;
   color: #758193;
-  transition: 0.5s;
+  transition: 0.2s;
+  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 10px;
+}
+header div a h1::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: #b91f41;
+  top: 75%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  transform: perspective(5rem) rotateX(30deg) scale(1, 0.5);
+  filter: blur(1.5rem);
+  opacity: 0;
 }
 header div nav .dropdown {
   display: none;
@@ -49,20 +64,24 @@ header div nav ul {
 }
 header div nav ul li a {
   text-decoration: none;
-  color: #9e1b38;
+  color: #b91f41;
   margin: 10px;
 }
 
 /* ----- Hovers y Animations -------- */
 header div a h1:hover {
-  color: #9e1b38;
+  color: #b91f41;
+  text-shadow: 0 0 0.5rem hsla(0deg, 0%, 100%, 0.322), 0 0 1rem #b91f41;
+}
+header div a h1:hover::before {
+  opacity: 1;
 }
 
 header div nav .button:hover {
-  background: #9e1b38;
+  background: #b91f41;
   color: #241525;
   text-shadow: none;
-  box-shadow: 0 0 2em 0.5em #9e1b38;
+  box-shadow: 0 0 2em 0.5em #b91f41;
 }
 header div nav .button:hover::before {
   opacity: 1;
@@ -140,7 +159,11 @@ main section div ul {
   list-style: square;
 }
 
-table, th, td {
+table {
+  display: block;
+  overflow-x: auto;
+}
+table th, table td {
   border: solid 1px;
   border-collapse: collapse;
   text-align: center;
@@ -173,13 +196,13 @@ footer {
 .button {
   display: flex;
   justify-content: center;
-  border: solid 2px #9e1b38;
+  border: solid 2px #b91f41;
   border-radius: 0.25em;
   height: 75px;
   font-size: 1rem;
   position: relative;
-  text-shadow: 0 0 0.125em hsla(0deg, 0%, 100%, 0.507), 0 0 0.45em #9e1b38;
-  box-shadow: inset 0 0 0.75em 0 #9e1b38;
+  text-shadow: 0 0 0.125em hsla(0deg, 0%, 100%, 0.507), 0 0 0.45em #b91f41;
+  box-shadow: inset 0 0 0.75em 0 #b91f41;
   transition: 100ms;
 }
 
@@ -187,7 +210,7 @@ footer {
   pointer-events: none;
   content: "";
   position: absolute;
-  background: #9e1b38;
+  background: #b91f41;
   top: 65%;
   left: 0;
   width: 100%;
@@ -304,7 +327,7 @@ footer {
 }
 
 .warning {
-  color: #9e1b38;
+  color: #b91f41;
   font-variant: small-caps;
 }
 
@@ -359,12 +382,16 @@ section .groups p {
   margin: 20px;
 }
 
+.dropdown-item {
+  margin: 0;
+}
+
 .row {
   padding: 20px 0px;
 }
 
 .card {
-  background-color: #9e1b38;
+  background-color: #b91f41;
   position: inherit;
 }
 
