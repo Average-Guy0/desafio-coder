@@ -7,7 +7,6 @@ header{
   div {
     a {
       text-decoration: none;
-      padding: 20px 0 0;
       h1 {
         align-items: center;
         display: flex;
@@ -21,6 +20,10 @@ header{
     
   
     nav {
+
+      .dropdown {
+        display: none;
+      }
       ul {
         display: flex;
         list-style: none;
@@ -28,7 +31,7 @@ header{
         
         li a {
           text-decoration: none;
-          color: $color-silver-grey;
+          color: $color-vibrant-red;
           margin: 10px;
         }
       }
@@ -52,14 +55,17 @@ header{
   }
   header div nav .button {
     &:hover {
-      height: 100px;
-      font-size: 23px;
-      border: solid $color-dark-purple;
-      background-color: $color-darker-purple;
+      background: $color-vibrant-red;
+      color: $color-darker-purple;
+      text-shadow: none;
+      box-shadow: 0 0 2em 0.5em $color-vibrant-red; 
+    }
+    &:hover::before {
+      opacity: 1;
     }
   
     a:hover {
-      color: $color-pinkish;
+      color: $color-darker-purple;
     }
   }
   

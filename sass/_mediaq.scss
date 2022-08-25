@@ -1,6 +1,6 @@
 // agrupada todas las mediaquery
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1290px) {
     .top {
       height: 125px;
     }
@@ -9,13 +9,23 @@
       height: 500px;
     }
   
-    header div nav .button {
-      height: max-content;
-  
-      &:hover {
-        height: auto;
+    header div nav {
+      .nav-bar {
+        display: none;
       }
-    }
+
+      .dropdown {
+        display: inherit;
+      }
+
+      .button {
+        height: max-content;
+    
+        &:hover {
+          height: auto;
+        }
+      }
+    } 
   
     img {
       max-width: 100%;
@@ -30,7 +40,7 @@
   @media screen and (max-width: 700px) {
     body {
       padding: 0;
-      font-size: 10px;
+      font-size: 2rem;
     }
   
     .top {
@@ -39,16 +49,8 @@
     }
   
     header div {
-      nav ul {
-        flex-direction: column;
-        li a {
-          font-size: 30px;
-        }
-      }
-  
       h1 {
         padding: 0px;
-        font-size: 20px;
       }
     }
   
@@ -62,16 +64,12 @@
       margin: 0;
     }
   
-    .more-space {
+    .wrapper {
       padding: 0, 10px;
     }
   
     img {
       max-width: 100%;
-    }
-  
-    .title {
-      font-size: 20px;
     }
   }
 

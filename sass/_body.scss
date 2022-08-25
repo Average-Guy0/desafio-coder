@@ -4,17 +4,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
+    // outline: 1px solid !important;
   }
   
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
   }
   
   body {
     font-family: 'Playfair Display';
     color: $color-white;
     font-weight: 300;
-    font-size: 20px;
     @include space (100%, 0);
   }
 

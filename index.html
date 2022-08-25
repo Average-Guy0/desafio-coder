@@ -39,9 +39,9 @@
                 <!-- Aca viene el titulo -->
                 <a href=""><h1>Piercing The Mist</h1></a>
                 
-                <!-- Barra de navegacion a la parte superior derecha con animaciones -->
+                <!-- Barra de navegacion a la parte superior derecha con animaciones, desaparece en mobile -->
                 <nav>
-                    <ul>
+                    <ul class="nav-bar">
                         <li class="button b-1">
                             <a href="data/news.html">Nuevos Articulos</a>
                         </li>
@@ -55,6 +55,18 @@
                             <a href="data/aportes.html">Aportes</a>
                         </li>
                     </ul>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menu
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item active" href="data/news.html">Nuevos Articulos</a></li>
+                          <li><a class="dropdown-item" href="#info-groups">Grupos de Interes</a></li>
+                          <li><a class="dropdown-item" href="data/glosario.html">Glosario</a></li>
+                          <li><a class="dropdown-item" href="data/aportes.html">Aportes</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 

@@ -41,7 +41,7 @@
             <!-- Aca viene el titulo -->
             <a href="../index.html"><h1>Piercing The Mist</h1></a>
            
-            <!-- Barra de navegacion a la parte superior derecha con animaciones -->
+            <!-- Barra de navegacion a la parte superior derecha con animaciones, desaparece en mobile -->
             <nav>
                 <ul>
                     <li class="button b-1">
@@ -58,6 +58,19 @@
                         <a href="aportes.html">Aportes</a>
                     </li>
                 </ul>
+
+                <!-- menu dropdown que aparece en mobile -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item active" href="#news">Nuevos Articulos</a></li>
+                      <li><a class="dropdown-item" href="../index.html#info-groups">Grupos de Interes</a></li>
+                      <li><a class="dropdown-item" href="glosario.html">Glosario</a></li>
+                      <li><a class="dropdown-item" href="aportes.html">Aportes</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
 
@@ -66,13 +79,13 @@
     <main>
         <div class="banner">
             <!-- esto sirve como titulo del html -->
-            <h2 class="title"  id="news">Nuevos Articulos</h2>
+            <h2 class="title">Nuevos Articulos</h2>
         </div>
         <!-- traje de boostrap, un carousel para mostrar los nuevos articulos que no se encuentran facilmente en el index, principalmente burnout y el gran sueño -->
         <div class="center">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="carousel-inner">
+                <div class="carousel-inner"  id="news">
                 <!-- primer carousel representa Burnout el grupo de protagonistas -->
                     <div class="carousel-item active">
                         <a href="burnout.html"><img src="../imagenes/burnout.jpg" class="d-block w-100" alt="fuego, representando el origen del grupo burnout"></a>
