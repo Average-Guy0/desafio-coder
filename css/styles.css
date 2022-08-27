@@ -405,18 +405,12 @@ section .groups p {
   border-top: #758193 solid;
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1300px) {
   .top {
     height: 125px;
   }
   .banner {
     height: 500px;
-  }
-  header div nav .nav-bar {
-    display: none;
-  }
-  header div nav .dropdown {
-    display: inherit;
   }
   header div nav .button {
     height: -webkit-max-content;
@@ -426,12 +420,20 @@ section .groups p {
   header div nav .button:hover {
     height: auto;
   }
+  header div nav .button a {
+    margin: 0;
+  }
   img {
     max-width: 100%;
   }
   .text-with-img {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 1150px) {
+  h1::before {
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {
@@ -445,6 +447,12 @@ section .groups p {
   }
   header div h1 {
     padding: 0px;
+  }
+  header div nav .nav-bar {
+    display: none;
+  }
+  header div nav .dropdown {
+    display: inherit;
   }
   section {
     display: flex;

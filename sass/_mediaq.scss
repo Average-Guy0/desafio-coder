@@ -1,6 +1,6 @@
 // agrupada todas las mediaquery
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1300px) {
     .top {
       height: 125px;
     }
@@ -10,19 +10,16 @@
     }
   
     header div nav {
-      .nav-bar {
-        display: none;
-      }
-
-      .dropdown {
-        display: inherit;
-      }
+      
 
       .button {
         height: max-content;
     
         &:hover {
           height: auto;
+        }
+        a {
+          margin: 0;
         }
       }
     } 
@@ -34,6 +31,12 @@
     .text-with-img {
       flex-wrap: wrap;
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    h1::before {
+      display: none;
     }
   }
   
@@ -51,6 +54,15 @@
     header div {
       h1 {
         padding: 0px;
+      }
+      nav {
+        .nav-bar {
+          display: none;
+        }
+  
+        .dropdown {
+          display: inherit;
+        }
       }
     }
   
