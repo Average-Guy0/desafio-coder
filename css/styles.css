@@ -400,9 +400,8 @@ section .groups p {
 }
 
 .carousel {
-  max-width: 95%;
-  padding-bottom: 1em;
   border-top: #758193 solid;
+  border-bottom: #758193 solid;
 }
 
 @media screen and (max-width: 1300px) {
