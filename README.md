@@ -89,7 +89,7 @@ como keywords especificas a la pagina + las esenciales
 
 //Nombre el titulo: "Piercing the Mist || Nuevos Articulos"
 
-<!-- news.html -->
+<!-- helix-labs.html -->
 
 //Agregué estas keywords: ", laboratorios secretos, experimentos inhumanos, alta tecnologia, farmaceutica, helix labs"
 como keywords especificas a la pagina + las esenciales
