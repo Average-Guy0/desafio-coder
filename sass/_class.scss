@@ -93,6 +93,46 @@
     flex-direction: column;
   }
 
+  .wrapper {
+    div {
+      padding: 0 10px 20px;
+    }
+  }
+
+
+  .quote {
+    background: linear-gradient(90deg, rgba(36,21,37,1) 0%, rgba(79,28,48,0) 75%);
+    background-size: 400%;
+    color: $color-white;
+    transition: 4s;
+    padding: 0;
+    animation: quote 8s infinite alternate;
+    p {
+      text-align: center;
+    }
+    h2::before {
+      content: open-quote;
+      font-size: 1.2em;
+      padding: 0 0 0 0.2em;
+    }
+    h2::after {
+      content: close-quote;
+      font-size: 1.2em;
+    }
+  }
+
+  // animacion para el background de .quote
+
+  @keyframes quote {
+    0% {
+      background-position: right;
+    }
+
+    100% {
+      background-position: left;
+    }
+  }
+
   .title {
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 100%);
     color: $color-white;
@@ -101,13 +141,7 @@
     font-family: 'Splash';
   }
 
-  .wrapper {
-    div {
-      padding: 0 10px 20px;
-      
-    }
-  }
-
+  
 
   // Each usando el mapa $fonts que esta en "_color-and-powers"
   @each $fuente, $peso in $fonts {

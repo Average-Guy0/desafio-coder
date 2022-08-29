@@ -34,61 +34,64 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
 
-            <div class="top">
-                <!-- Aca viene el titulo -->
-                <a href="">
-                    <h1>Piercing The Mist</h1>
-                </a>
+    <header>
 
-                <!-- Barra de navegacion a la parte superior derecha con animaciones, desaparece en mobile -->
-                <nav>
-                    <ul class="nav-bar">
-                        <li class="button b-1">
-                            <a href="data/news.html">Nuevos Artículos</a>
-                        </li>
-                        <li class="button b-2">
-                            <a href="#info-groups">Grupos de Interés</a>
-                        </li>
-                        <li class="button b-3">
-                            <a href="data/glosario.html">Glosario</a>
-                        </li>
-                        <li class="button b-4">
-                            <a href="data/aportes.html">Aportes</a>
-                        </li>
+        <div class="top">
+            <!-- Aca viene el titulo -->
+            <a href="">
+                <h1>Piercing The Mist</h1>
+            </a>
+
+            <!-- Barra de navegacion a la parte superior derecha con animaciones, desaparece en mobile -->
+            <nav>
+                <ul class="nav-bar">
+                    <li class="button b-1">
+                        <a href="data/news.html">Nuevos Artículos</a>
+                    </li>
+                    <li class="button b-2">
+                        <a href="#info-groups">Grupos de Interés</a>
+                    </li>
+                    <li class="button b-3">
+                        <a href="data/glosario.html">Glosario</a>
+                    </li>
+                    <li class="button b-4">
+                        <a href="data/aportes.html">Aportes</a>
+                    </li>
+                </ul>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="data/news.html">Nuevos Artículos</a></li>
+                        <li><a class="dropdown-item" href="#info-groups">Grupos de Interés</a></li>
+                        <li><a class="dropdown-item" href="data/glosario.html">Glosario</a></li>
+                        <li><a class="dropdown-item" href="data/aportes.html">Aportes</a></li>
                     </ul>
+                </div>
+            </nav>
+        </div>
 
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Menu
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="data/news.html">Nuevos Artículos</a></li>
-                            <li><a class="dropdown-item" href="#info-groups">Grupos de Interés</a></li>
-                            <li><a class="dropdown-item" href="data/glosario.html">Glosario</a></li>
-                            <li><a class="dropdown-item" href="data/aportes.html">Aportes</a></li>
-                        </ul>
-                    </div>
-                </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="banner">
+
+            <div class="quote">
+                <!-- este es pequeña cita de un autor que Mister N(el autor ficticio de la pagina) penso que representa bien el mundo en el que viven -->
+                <h2>I enter the world called real as one enters a mist.</h2>
+
+                <p>-Julien Green.</p>
             </div>
+        </div>
 
-        </header>
-
-
-
-        <main>
-
-            <div class="banner">
-                <!-- este es un pequeño mensaje de mister N, que seria el autor ficticio de la pagina -->
-                <h2 class="p-2"><u>Hey, Welcome to my corner of the city's web.</u></h2>
-
-                <p class="p-2 remark"><u>Si estas aqui significa que estas pagandome por informacion, y la informacion
-                        es mi
-                        dominio...</u></p>
-            </div>
+        <div class="wrapper">
             <!-- con la etiqueta "section" llamo a una grilla hecha a mano que dejara los sigientes div de esta forma: -->
             <!-- <div1><div2> -->
             <!-- <   div3   > -->
@@ -119,13 +122,14 @@
                     <p class="pb-2">Bueno primero antes de que defeques tus pantalones dejame darte un pantallazo.</p>
                     <p>No, no te estás volviendo loco, eso si es un castillo en la otra cuadra, esa niña que salió a
                         comprar un helado si tiene la cabeza de un elefante, y el vecino salió a tirar la basura en
-                        plena armadura pesada. En esta ciudad la realidad y la ficción se mezclan</p>
+                        plena armadura pesada. En esta ciudad la realidad y la ficción se mezclan.</p>
                     <p>No es que los demonios y ángeles estén caminando por la calle en el centro camino a la oficina,
                         la realidad es que esos demonios y ángeles son reencarnados adentro de gente regular, tu típicos
                         Janes y Joes. A estas personas se las conoce como grietas, gente que vive las leyendas en la
                         vida moderna.</p>
 
-                    <p class="pt-3">Seguro tenés otras preguntas, como: ¿que carajo significa es una grieta?, en ese caso
+                    <p class="pt-3">Seguro tenés otras preguntas, como: ¿que carajo significa es una grieta?, en ese
+                        caso
                         dirígete <a class="remark" href="data/glosario.html">Aquí.</a></p>
                 </div>
 
@@ -259,34 +263,34 @@
                     <!-- las areas con span seran remarcadas con distinco color o subrayadas acorde -->
                 </div>
             </section>
-        </main>
+    </main>
 
-        <footer>
-            <!-- legalidad con respecto a la propiedad intelectual de City of Mist -->
-            <div>
-                <p><span class="trade-name">Piercing the mist:</span> Es una obra de ficción. Toda semejanza con la
-                    realidad es pura coincidencia</p>
-                <p>Todos los derechos reservados a <button class="btn btn-primary btn-dark" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Son
-                        of Oak Game Studio</button></p>
-            </div>
+    <footer>
+        <!-- legalidad con respecto a la propiedad intelectual de City of Mist -->
+        <div>
+            <p><span class="trade-name">Piercing the mist:</span> Es una obra de ficción. Toda semejanza con la
+                realidad es pura coincidencia</p>
+            <p>Todos los derechos reservados a <button class="btn btn-primary btn-dark" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Son
+                    of Oak Game Studio</button></p>
+        </div>
 
-            <!-- offcanvas sacado de boostrap para revelar mas informacion hacerca de la relacion entre piercing the mist y city of mist -->
-            <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="offcanvasBottom"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">City of Mist</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body small">
-                    <p>Todo lo que aparece en Piercing the Mist es parte del universo de City of Mist que pertenece a
-                        Son of Oak Game Studio.</p>
-                    <p> Todo lo presentado aquí es en referencia a una instancia de juego personal.</p>
-                    <p>Para conocer más sobre este mundo, por favor visita la página principal de <a
-                            href="https://cityofmist.co/" target="_blank">City of Mist</a></p>
-                </div>
+        <!-- offcanvas sacado de boostrap para revelar mas informacion hacerca de la relacion entre piercing the mist y city of mist -->
+        <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">City of Mist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </footer>
+            <div class="offcanvas-body small">
+                <p>Todo lo que aparece en Piercing the Mist es parte del universo de City of Mist que pertenece a
+                    Son of Oak Game Studio.</p>
+                <p> Todo lo presentado aquí es en referencia a una instancia de juego personal.</p>
+                <p>Para conocer más sobre este mundo, por favor visita la página principal de <a
+                        href="https://cityofmist.co/" target="_blank">City of Mist</a></p>
+            </div>
+        </div>
+    </footer>
     </div>
 
     <!-- JavaScript Bundle with Popper -->

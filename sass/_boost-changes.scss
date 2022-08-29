@@ -18,7 +18,10 @@
   }
 
 .carousel {
-  border-top: $color-silver-grey solid;
-  border-bottom: $color-silver-grey solid;
+  border: $color-silver-grey solid;
 }
 
+.carousel-caption {
+  bottom: 35em;
+  text-shadow: 0 0 0.5em $color-black-smoke;
+}

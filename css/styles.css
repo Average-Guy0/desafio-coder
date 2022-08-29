@@ -263,16 +263,55 @@ footer {
   flex-direction: column;
 }
 
+.wrapper div {
+  padding: 0 10px 20px;
+}
+
+.quote {
+  background: linear-gradient(90deg, rgb(36, 21, 37) 0%, rgba(79, 28, 48, 0) 75%);
+  background-size: 400%;
+  color: #dddadb;
+  transition: 4s;
+  padding: 0;
+  -webkit-animation: quote 8s infinite alternate;
+          animation: quote 8s infinite alternate;
+}
+.quote p {
+  text-align: center;
+}
+.quote h2::before {
+  content: open-quote;
+  font-size: 1.2em;
+  padding: 0 0 0 0.2em;
+}
+.quote h2::after {
+  content: close-quote;
+  font-size: 1.2em;
+}
+
+@-webkit-keyframes quote {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes quote {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
 .title {
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 212, 255, 0) 100%);
   color: #dddadb;
   text-align: center;
   font-size: 3rem;
   font-family: "Splash";
-}
-
-.wrapper div {
-  padding: 0 10px 20px;
 }
 
 .thin, .thin-font {
@@ -340,7 +379,7 @@ footer {
 }
 
 .emilia {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .fabby {
@@ -400,8 +439,12 @@ section .groups p {
 }
 
 .carousel {
-  border-top: #758193 solid;
-  border-bottom: #758193 solid;
+  border: #758193 solid;
+}
+
+.carousel-caption {
+  bottom: 35em;
+  text-shadow: 0 0 0.5em #0e0712;
 }
 
 @media screen and (max-width: 1300px) {

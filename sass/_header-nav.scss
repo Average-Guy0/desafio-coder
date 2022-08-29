@@ -17,7 +17,7 @@ header{
         position: relative;
         @include space (fit-content, 0 10px)
       }
-
+      // pseduo elemento para el efecto de luz en el suelo
       h1::before {
         pointer-events: none;
         content: "";
@@ -33,6 +33,7 @@ header{
 
         transform: perspective(5rem) rotateX(30deg) scale(1, 0.5);
         filter: blur(1.5rem);
+        // opacidad de 0 para que no se vea sin hacer hover
         opacity: 0;
       }
     }
